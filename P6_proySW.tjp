@@ -171,7 +171,6 @@ task WMGame "Web & Mobile Game" {
      task tDIJ "Desarrollo interfaz juego" {
 	effort 10d
 	allocate dev2
-	depends WMGame.tDMJ.tDI
      }
      task tDI "Diseñar iconos" {
 	effort 5d
