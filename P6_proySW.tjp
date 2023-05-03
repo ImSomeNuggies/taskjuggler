@@ -176,6 +176,11 @@ task WMGame "Web & Mobile Game" {
      task tDI "Diseñar iconos" {
 	effort 5d
 	allocate dev1
+	journalentry 2023-05-03 "Evaluacion de iconos" {
+        	author dev4
+        	alert green
+        	summary "Los iconos son perfectos."
+        }
      }
      task tDLB "Diseñar logica base" {
 	effort 9d
