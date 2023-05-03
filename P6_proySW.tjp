@@ -190,45 +190,7 @@ task WMGame "Web & Mobile Game" {
     }
   }
 
-  task tDMJ "Desarrollo movil juego" {
-     chargeset wFront
-     responsible dev4
-     depends WMGame.tback.tBEd
-     task tDIJ "Desarrollo interfaz juego" {
-	effort 10d
-	allocate dev2
-	depends WMGame.tDMJ.tDI
-     }
-     task tDI "Diseñar iconos" {
-	effort 5d
-	allocate dev1
-	summary "Los iconos son perfectos"
-     }
-     task tDLB "Diseñar logica base" {
-	effort 9d
-	allocate dev3, dev4
-     }
-  }
 
-  task tSDNB "Soporte despliegue nube backend" {
-     chargeset back
-     responsible dev1
-     depends WMGame.tback.tBEd
-     task tSND "Seleccionar nube despliegue" {
-	effort 4d
-	allocate dev1,dev2,dev3
-     }
-     task tPDN "Preparación despliegue nube" {
-	effort 12d
-	allocate dev2,dev3
-	depends WMGame.tSDNB.tSND
-     }
-     task tEDN "Evaluacion despliegue nube"  {
-	effort 4d
-	allocate dev1,dev2,dev3
-	depends WMGame.tSDNB.tPDN
-     }
-  }
 }
 
 # Now the project has been specified completely. Stopping here would
