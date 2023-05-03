@@ -69,6 +69,8 @@ resource dev3 "Peter Green" {
 }
 resource dev4 "Juan Pellicer" {
   email "818138@unizar.es"
+  rate 500
+  limits { dailymax 4h }
 }
 
 # Now we specify the work packages. The whole project is described as
