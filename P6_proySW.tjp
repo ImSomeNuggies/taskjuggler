@@ -176,7 +176,6 @@ task WMGame "Web & Mobile Game" {
      task tDI "Diseñar iconos" {
 	effort 5d
 	allocate dev1
-	summary "Los iconos son perfectos"
      }
      task tDLB "Diseñar logica base" {
 	effort 9d
